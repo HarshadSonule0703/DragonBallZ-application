@@ -1,0 +1,178 @@
+/* Add this to your CSS
+html, body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #78B9B5; 
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    height: 600px;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F828C;
+}
+.img-container{
+    height: 250px;
+    width: 200px;
+    background-color: #065084;
+}
+.img-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: fill;
+}
+.btn-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.btn-container button{
+    background-color: #320A6B;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.desc-container {
+    background-color: #EAF6F6;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.desc-container h2,
+.desc-container p {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.desc-container h2 span,
+.desc-container p span {
+    margin-left: 8px;
+    color: #0F828C;
+    font-weight: bold;
+} */
+
+
+/* Reset and body layout */
+html, body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Stylish gradient */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Container styling */
+.main-container {
+    height: 600px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image section */
+.img-container {
+    height: 260px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+/* Hover zoom effect */
+
+.img-container:hover  {
+    transition: ease 0.7s;
+    transform: scale(1.2);
+}
+
+/* Description box */
+.desc-container {
+    background-color: #f5f5f5;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 100%;
+    color: #222;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.desc-container h2,
+.desc-container p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.desc-container h2 span,
+.desc-container p span {
+    margin-left: 8px;
+    color: #1976D2;
+    font-weight: 600;
+}
+
+/* Button container */
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-container button {
+    background-color: #1976D2;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for buttons */
+.btn-container button:hover {
+    background-color: #125ea8;
+    transform: scale(1.05);
+}
